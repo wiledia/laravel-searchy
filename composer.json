@@ -1,0 +1,39 @@
+{
+    "name": "wiledia/laravel-searchy",
+    "description": "Laravel Searchy makes user driven searching easy with fuzzy search, basic string matching, Levenshtein Distance and more.",
+    "keywords": ["laravel", "search", "fuzzy"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wiledia",
+            "email": "hello@wiledia.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wiledia\\Searchy\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Wiledia\\Searchy\\SearchyServiceProvider"
+            ],
+            "aliases": {
+                "Searchy": "Wiledia\\Searchy\\Facades\\Searchy"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
